@@ -38,12 +38,6 @@ local function SkinCompactUnitFrame(U)
   U.powerBar.TopBorder:SetStartPoint("TOPLEFT")
   U.powerBar.TopBorder:SetEndPoint("TOPRIGHT")
   hooksecurefunc(U.powerBar, "SetStatusBarTexture", function(S) SetStatusBarTexture(S, Addon.Media.."/MinimalistBar") end)
-
-  -- Disabling default aura containers
-  U._AuraSize = 11 * min(U:GetHeight() / 36, U:GetWidth() / 72) -- https://github.com/Nevcairiel/wow-ui-source-1/blob/live/FrameXML/CompactUnitFrame.lua#L1675
-  U:HookScript("OnSizeChanged", function()
-    U._AuraSize = 11 * min(U:GetHeight() / 36, U:GetWidth() / 72)
-  end)
 end
 
 -- Players

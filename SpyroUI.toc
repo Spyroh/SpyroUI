@@ -1,0 +1,38 @@
+## Interface: 120107, 120105, 16001
+## IconTexture: Interface\Icons\INV_Misc_Head_Dragon_01
+## Title: SpyroUI
+## Notes: Spyro's User Interface
+## Version: 0.1
+## Author: Spyro
+## LoadSavedVariablesFirst: 1
+## SavedVariablesPerCharacter: SpyroUI_DB
+## OptionalDeps: Blizzard_MacroUI, BigDebuffs, ItemRack
+
+Libs\LibStub.lua
+Libs\CallbackHandler-1.0.lua
+Libs\LibDataBroker-1.1.lua
+Libs\LibDBIcon-1.0.lua
+Libs\LibEditModeOverride.lua
+Libs\oUF\oUF.xml
+
+Lib.lua
+Config.lua
+Tags.lua
+Automation.lua
+Minimap.lua
+Tooltip.lua
+UnitFrame.lua
+Target.lua
+Focus.lua [ExcludeLoadGameType vanilla]
+Player.lua
+ClassResources.lua
+Pet.lua
+Party.lua
+PartyPet.lua
+Arena.lua
+ArenaPet.lua [ExcludeLoadGameType vanilla, camelot]
+Boss.lua
+Raid.lua
+ActionBars.lua
+PetBar.lua
+Misc.lua
